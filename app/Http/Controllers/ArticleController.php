@@ -6,11 +6,8 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     */
-    public function __invoke(Request $request, $id)
+    public function __invoke($id)
     {
-        return 'Halaman Artikel dengan ID ' . $id;
+        return "Halaman Artikel dengan ID $id";
     }
 }
